@@ -1,0 +1,139 @@
+.header-container {
+  position: relative;
+  z-index: 3;
+}
+
+.items-menu.show {
+  display: block;
+}
+.caja-tema-idioma.show {
+  display: block;
+}
+
+.menu-container {
+  margin: auto;
+  max-width: 1920px;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  padding: 20px 0px;
+  background-color: rgba(175, 173, 161, 0.416);
+}
+.menu-container a {
+  color: white;
+  margin-left: 15px;
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: 700;
+}
+.wrapper-logo {
+  margin-left: 120px;
+}
+.edit-logo {
+  border-radius: 20%;
+}
+.items-menu {
+  padding-top: 20px;
+}
+
+.caja-tema-idioma {
+  display: flex;
+  margin-right: 75px;
+  /* margin-top: 15px; */
+  align-items: center;
+}
+
+.dark {
+  margin: 0px 20px;
+}
+
+.ingles {
+  display: inline-flex;
+}
+.ingles button {
+  width: 35px;
+  height: 35px;
+  padding: 0;
+  margin: 0;
+  display: block;
+  max-width: inherit;
+  min-width: inherit;
+  border-radius: 50%;
+  margin-left: 5px;
+}
+.ingles button span {
+  display: block;
+  width: inherit;
+  max-width: inherit;
+  min-width: inherit;
+}
+.ingles button img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+}
+
+.container-photo img {
+  border-radius: 40px;
+}
+
+.open-hamburguer {
+  display: none;
+}
+
+@media screen and (max-width: 760px) {
+  .wrapper-logo {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .items-menu {
+    display: grid;
+    justify-items: center;
+    /* background-color: rgba(255, 255, 0, 0.366); */
+    min-height: 0;
+    line-height: 1.9;
+    display: none;
+  }
+
+  .open-hamburguer {
+    /* background-color: red; */
+    /* display: block !important; */
+    /* display: none; */
+    display: block !important;
+  }
+  .ingles {
+    display: none;
+  }
+
+  .menu-container {
+    /* background-color: rgba(255, 0, 0, 0.427); */
+    display: block;
+    padding: 15px 0px;
+  }
+
+  .caja-tema-idioma {
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+  }
+
+  .dark {
+    margin-left: 12px;
+  }
+
+  .menu-style {
+    display: block;
+  }
+
+  .caja-tema-idioma {
+    display: none;
+  }
+}
