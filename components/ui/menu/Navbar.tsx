@@ -54,7 +54,7 @@ export const Navbar = () => {
             {/* logo de mi nombre*/}
             <img
               className={styles["edit-logo"]}
-              src="http://localhost:3000/img/logaso.png"
+              src="/img/logaso.png"
               alt=""
               width={60}
               height={65}
@@ -94,12 +94,8 @@ export const Navbar = () => {
               <Switch
                 checked={true}
                 size="xl"
-                iconOn={
-                  <img src="http://localhost:3000/img/ingles.png" alt="" />
-                }
-                iconOff={
-                  <img src="http://localhost:3000/img/español.png" alt="" />
-                }
+                iconOn={<img src="img/ingles.png" alt="" />}
+                iconOff={<img src="img/español.png" alt="" />}
               />
             </Grid.Container>
           </div>
