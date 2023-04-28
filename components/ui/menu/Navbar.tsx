@@ -67,9 +67,9 @@ export const Navbar = () => {
               onClick={handlerOnClickMenu}
             >
               {isOpen ? (
-                <CloseIcon sx={{ color: "white" }} fontSize="large" />
+                <CloseIcon sx={{ color: "white", fontSize: "50px" }} />
               ) : (
-                <MenuIcon sx={{ color: "white" }} fontSize="large" />
+                <MenuIcon sx={{ color: "white", fontSize: "50px" }} />
               )}
             </IconButton>
           </div>
@@ -90,7 +90,10 @@ export const Navbar = () => {
           }`}
         >
           <div className={styles["dark"]}>
-            <Grid.Container gap={2}>
+            <Grid.Container
+              gap={2} /*className={`${styles["row-center"]}`}*/
+              style={{ display: "flex", justifyContent: "center" }}
+            >
               <Switch
                 checked={true}
                 size="xl"
