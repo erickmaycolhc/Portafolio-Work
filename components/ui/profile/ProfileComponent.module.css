@@ -1,0 +1,127 @@
+.section {
+  /* background-color: blueviolet; */
+}
+
+.container {
+  /* background-color: yellow; */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0px 15px;
+  height: 100%;
+  justify-content: center;
+}
+
+.title-about {
+  /* background-color: red; */
+  display: flex;
+  justify-content: center;
+}
+
+.title-about h1 {
+  /* background-color: red; */
+  color: white;
+  font-size: 80px;
+}
+
+.container-about {
+  /* background-color: orange; */
+  display: flex;
+  justify-content: center;
+}
+
+.photo {
+  /* background-color: aqua; */
+  width: 40rem;
+  height: 40rem;
+}
+.photo img {
+  border-radius: 6rem;
+}
+
+.container-descrip-skills {
+  /* background-color: rgb(184, 124, 49); */
+  padding: 0 30px;
+}
+
+.description {
+  /* background-color: blueviolet; */
+  border: 1px solid white;
+  border-radius: 2px;
+  width: 400px;
+  margin-top: 10rem;
+}
+
+.container-cuerpo-menu {
+  /* background-color: rgb(172, 71, 34); */
+  display: flex;
+  outline: 1px solid white;
+  border-radius: 2px 2px 0 0;
+}
+
+.caja-semaforo {
+  padding: 0.5rem 1rem;
+  /* background-color: aqua; */
+}
+
+.caja-semaforo span {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin: 0 0.1rem;
+}
+
+.btn-red {
+  background-color: red;
+}
+
+.btn-yellow {
+  background-color: yellow;
+}
+
+.btn-green {
+  background-color: green;
+}
+
+.caja-about {
+  /* background-color: darkgreen; */
+  padding: 0.5rem 1rem;
+  color: white;
+  background-color: #0a0214;
+  position: relative;
+  bottom: -2px;
+  font-size: 0.9rem;
+  position: relative;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+}
+
+.container-cuerpo-parrafo {
+  display: flex;
+}
+
+.comentario-1 {
+  background-color: #15111a;
+  padding: 1.5rem 0.7rem;
+  color: white;
+}
+
+.descrip-erick {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+.descrip-erick p {
+  text-align: left;
+  padding: 1.5rem 0.8rem;
+  letter-spacing: 1px;
+  line-height: 1.5rem;
+  font-size: 14px;
+  color: white;
+}
+
+.skilss {
+  color: white;
+}
