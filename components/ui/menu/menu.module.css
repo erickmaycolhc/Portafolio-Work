@@ -121,10 +121,14 @@
     display: none;
   }
 
+  /* .header-container {
+    position: absolute;
+  } */
   .menu-container {
     /* background-color: rgba(255, 0, 0, 0.427); */
     display: block;
     padding: 15px 0px;
+    position: relative;
   }
 
   .caja-tema-idioma {
