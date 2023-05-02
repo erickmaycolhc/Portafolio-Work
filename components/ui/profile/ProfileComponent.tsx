@@ -6,7 +6,7 @@ const ProfileComponent = () => {
     <section className={styles["section"]}>
       <div className={styles["container"]}>
         <div className={styles["title-about"]}>
-          <h1> About</h1>
+          <h1> Sobre mi</h1>
         </div>
         <div className={styles["container-about"]}>
           <div className={styles["photo"]}>
@@ -36,7 +36,40 @@ const ProfileComponent = () => {
                 </div>
               </div>
             </div>
-            <div className={styles["skilss"]}>skills</div>
+            <div className={styles["skills-container"]}>
+              <h4>SKILLS</h4>
+              <div className="gap-1">
+                <a
+                  href="https://developer.mozilla.org/es/docs/Web/HTML"
+                  target="_blank"
+                >
+                  <img
+                    className="skill-img"
+                    src="download/html.svg"
+                    alt="html-logo"
+                    data-toggle="tooltip"
+                    data-placement="top"
+                    title=""
+                    data-original-title="HTML"
+                  ></img>
+                </a>
+                <a
+                  href="https://developer.mozilla.org/es/docs/Web/HTML"
+                  target="_blank"
+                >
+                  <img
+                    className="skill-img"
+                    src="download/css.svg"
+                    alt="css-logo"
+                    data-toggle="tooltip"
+                    data-placement="top"
+                    title=""
+                    data-original-title="CSS"
+                  ></img>
+                </a>
+              </div>
+              <div className="gap-2"></div>
+            </div>
           </div>
         </div>
       </div>
