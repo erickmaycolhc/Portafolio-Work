@@ -101,14 +101,18 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 9px;
   }
 
   .items-menu {
     min-height: 0;
-    line-height: 1.9;
     display: none;
     text-align: center;
     background-color: #797396 !important;
+  }
+
+  .items-menu a {
+    padding: 5px 0px !important;
   }
 
   .open-hamburguer {
@@ -134,18 +138,18 @@
 
   .caja-tema-idioma {
     display: none !important;
+    margin-top: 5px;
   }
 
   .dark {
     /* margin-left: 12px; */
     background-color: #797396 !important;
   }
+  .menu-container a {
+    padding: 0;
+  }
 
   .menu-style {
     display: block;
   }
-  /* .row-center > label {
-    margin-left: auto;
-    margin-right: auto;
-  } */
 }

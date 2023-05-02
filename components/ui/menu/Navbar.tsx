@@ -67,7 +67,9 @@ export const Navbar = () => {
               onClick={handlerOnClickMenu}
             >
               {isOpen ? (
-                <CloseIcon sx={{ color: "white", fontSize: "50px" }} />
+                <CloseIcon
+                  sx={{ color: "white", fontSize: "50px", padding: "0" }}
+                />
               ) : (
                 <MenuIcon sx={{ color: "white", fontSize: "50px" }} />
               )}
