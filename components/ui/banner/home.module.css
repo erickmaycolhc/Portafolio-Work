@@ -68,24 +68,20 @@
 }
 
 .boton-hacia-abajo span:nth-child(2) {
-  animation-delay: -0.2s;
-}
-
-.boton-hacia-abajo span:nth-child(3) {
-  animation-delay: -0.4s;
+  animation-delay: -0.3s;
 }
 
 @keyframes animate {
   0% {
     opacity: 0;
-    transform: rotate(45deg) translate(-20px, -20px);
+    transform: rotate(45deg) translate(-10px, -10px);
   }
   50% {
     opacity: 1;
   }
   100% {
     opacity: 0;
-    transform: rotate(45deg) translate(20px, 20px);
+    transform: rotate(45deg) translate(10px, 10px);
   }
 }
 
@@ -231,6 +227,9 @@
 .container-user-cv {
   margin-top: 9rem;
 }
+
 .photo {
-  margin-bottom: 99px;
+  max-width: 281px;
+  margin-bottom: 103px;
+  margin-bottom: 129px;
 }

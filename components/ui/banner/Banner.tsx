@@ -28,7 +28,6 @@ export const Banner = () => {
         <div className={styles["boton-hacia-abajo"]}>
           <span></span>
           <span></span>
-          <span></span>
         </div>
       </div>
     </>
