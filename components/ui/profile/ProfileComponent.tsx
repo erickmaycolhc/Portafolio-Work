@@ -38,37 +38,143 @@ const ProfileComponent = () => {
             </div>
             <div className={styles["skills-container"]}>
               <h4>SKILLS</h4>
-              <div className="gap-1">
+              <div className={styles["gap-1"]}>
                 <a
+                  className={styles["link-kill-img"]}
                   href="https://developer.mozilla.org/es/docs/Web/HTML"
                   target="_blank"
                 >
+                  <span className={styles["tool-tip"]}>HTML</span>
                   <img
-                    className="skill-img"
+                    className={styles["skill-img"]}
                     src="download/html.svg"
-                    alt="html-logo"
-                    data-toggle="tooltip"
-                    data-placement="top"
-                    title=""
-                    data-original-title="HTML"
+                    width={50}
+                    height={50}
                   ></img>
                 </a>
                 <a
-                  href="https://developer.mozilla.org/es/docs/Web/HTML"
+                  className={styles["link-kill-img"]}
+                  href="https://developer.mozilla.org/es/docs/Web/CSS"
                   target="_blank"
                 >
+                  <span className={styles["tool-tip"]}>CSS</span>
                   <img
                     className="skill-img"
                     src="download/css.svg"
-                    alt="css-logo"
-                    data-toggle="tooltip"
-                    data-placement="top"
-                    title=""
-                    data-original-title="CSS"
+                    width={50}
+                    height={50}
+                  ></img>
+                </a>
+                <a
+                  className={styles["link-kill-img"]}
+                  href="https://developer.mozilla.org/es/docs/Web/JavaScript"
+                  target="_blank"
+                >
+                  <span className={styles["tool-tip"]}>JavaScript</span>
+                  <img
+                    className="skill-img"
+                    src="download/js.svg"
+                    width={50}
+                    height={50}
+                  ></img>
+                </a>
+                <a
+                  className={styles["link-kill-img"]}
+                  href="https://es.react.dev"
+                  target="_blank"
+                >
+                  <span className={styles["tool-tip"]}>React</span>
+                  <img
+                    className="skill-img"
+                    src="download/reactjs.svg"
+                    width={50}
+                    height={50}
+                  ></img>
+                </a>
+                <a
+                  className={styles["link-kill-img"]}
+                  href="https://www.oracle.com/pe/java/"
+                  target="_blank"
+                >
+                  <span className={styles["tool-tip"]}>Java</span>
+                  <img
+                    className="skill-img"
+                    src="download/java.svg"
+                    width={50}
+                    height={50}
+                    style={{ borderRadius: "20%" }}
                   ></img>
                 </a>
               </div>
-              <div className="gap-2"></div>
+              <div className={styles["gap-2"]}>
+                <a
+                  className={styles["link-kill-img"]}
+                  href="https://www.mysql.com"
+                  target="_blank"
+                >
+                  <span className={styles["tool-tip"]}>MySQL</span>
+                  <img
+                    className="skill-img"
+                    src="download/mysql.svg"
+                    width={50}
+                    height={50}
+                  ></img>
+                </a>
+                <a
+                  className={styles["link-kill-img"]}
+                  href="https://www.mongodb.com"
+                  target="_blank"
+                >
+                  <span className={styles["tool-tip"]}>MongoDB</span>
+                  <img
+                    className="skill-img"
+                    src="download/mongo.svg"
+                    width={50}
+                    height={50}
+                  ></img>
+                </a>
+                <a
+                  className={styles["link-kill-img"]}
+                  href="https://git-scm.com"
+                  target="_blank"
+                >
+                  <span className={styles["tool-tip"]}>Git</span>
+                  <img
+                    className="skill-img"
+                    src="download/git2.svg"
+                    width={50}
+                    height={50}
+                  ></img>
+                </a>
+                <a
+                  className={styles["link-kill-img"]}
+                  href="https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html"
+                  target="_blank"
+                >
+                  <span className={styles["tool-tip"]}>Typescript</span>
+                  <img
+                    className="skill-img"
+                    src="download/typescript.png"
+                    width={50}
+                    height={50}
+                    style={{ borderRadius: "20%" }}
+                  ></img>
+                </a>
+                <a
+                  className={styles["link-kill-img"]}
+                  href="https://www.postman.com"
+                  target="_blank"
+                >
+                  <span className={styles["tool-tip"]}>Postman</span>
+                  <img
+                    className="skill-img"
+                    src="download/postman.png"
+                    width={50}
+                    height={50}
+                    style={{ borderRadius: "20%" }}
+                  ></img>
+                </a>
+              </div>
             </div>
           </div>
         </div>

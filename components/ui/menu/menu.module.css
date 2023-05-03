@@ -1,7 +1,7 @@
 .header-container {
   position: fixed;
   z-index: 3;
-  background-color: #797396;
+  background-color: #95d204;
   height: 112px;
   width: 100%;
   display: block;
@@ -24,7 +24,7 @@
   /* background-color: green; */
 }
 .menu-container a {
-  color: white;
+  color: black;
   margin-left: 15px;
   font-family: "Roboto", sans-serif;
   text-decoration: none;
@@ -152,4 +152,13 @@
   .menu-style {
     display: block;
   }
+}
+.input-change-country > div {
+  background-color: black;
+}
+.input-change-country > div:hover {
+  background-color: black !important;
+}
+.input-change-country.checked > div {
+  background-color: #f31260 !important;
 }

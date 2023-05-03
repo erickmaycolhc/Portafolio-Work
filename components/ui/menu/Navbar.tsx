@@ -1,13 +1,13 @@
 import Link from "next/link";
 import { ActiveLink } from "./ActiveLinxs";
 import styles from "./menu.module.css";
-import { Avatar, Button, Grid, Switch } from "@nextui-org/react";
+import { Avatar, Button, Grid, Switch, Spacer } from "@nextui-org/react";
 import SunIcon from "@/components/utils/SunIcon";
 import MoonIcon from "@/components/utils/MoonIcon";
 import { ParticlesBackground } from "@/components/config/ParticlesBackbround";
 import MenuIcon from "@mui/icons-material/Menu";
 import { IconButton } from "@mui/material";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import CloseIcon from "@mui/icons-material/Close";
 
 const menuItems = [
@@ -27,6 +27,15 @@ const menuItems = [
 
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isLenguajeActive, setIsLenguajeActive] = useState(false);
+
+  useEffect(() => {
+    console.log("ddd ==> ", isLenguajeActive);
+  }, [isLenguajeActive]);
+
+  const changeLenguaje = () => {
+    setIsLenguajeActive(!isLenguajeActive);
+  };
   const handlerOnClickMenu = () => {
     console.log("handlerOnClickMenu=>>>", isOpen);
     if (isOpen) {
@@ -35,16 +44,6 @@ export const Navbar = () => {
       setIsOpen(true);
     }
   };
-
-  // const [isClose, setIsClose] = useState(false);
-  // const handlerOnClickClose = () => {
-  //   console.log("handlerOnClickClose =>>>", isClose);
-  //   if (isClose) {
-  //     setIsClose(false);
-  //   } else {
-  //     setIsClose(true);
-  //   }
-  // };
 
   return (
     <header className={styles["header-container"]}>
@@ -94,14 +93,23 @@ export const Navbar = () => {
           <div className={styles["dark"]}>
             <Grid.Container
               gap={2} /*className={`${styles["row-center"]}`}*/
-              style={{ display: "flex", justifyContent: "center" }}
+              style={{
+                display: "flex",
+                justifyContent: "center",
+              }}
             >
               <Switch
-                checked={true}
+                className={`${styles["input-change-country"]}  ${
+                  isLenguajeActive ? styles["checked"] : ""
+                }`}
+                shadow
+                checked={isLenguajeActive}
+                onChange={() => changeLenguaje()}
                 size="xl"
-                iconOn={<img src="img/ingles.png" alt="" />}
-                iconOff={<img src="img/español.png" alt="" />}
+                iconOn={<img src="img/español.png" alt="" />}
+                iconOff={<img src="img/ingles.png" alt="" />}
               />
+              <Spacer />
             </Grid.Container>
           </div>
         </div>

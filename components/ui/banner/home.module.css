@@ -223,13 +223,14 @@
   .boton-hacia-abajo {
     margin-top: 375px;
   }
-}
-.container-user-cv {
-  margin-top: 9rem;
-}
 
-.photo {
-  max-width: 281px;
-  margin-bottom: 103px;
-  margin-bottom: 129px;
+  .container-user-cv {
+    margin-top: 9rem;
+  }
+
+  .photo {
+    max-width: 281px;
+    margin-bottom: 103px;
+    margin-bottom: 129px;
+  }
 }

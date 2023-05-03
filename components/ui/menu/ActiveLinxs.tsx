@@ -9,7 +9,7 @@ type props = {
 };
 
 const style: CSSProperties = {
-  color: "#D5BE74",
+  color: "white",
   textDecoration: "none",
 };
 
