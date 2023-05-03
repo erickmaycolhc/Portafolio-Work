@@ -222,3 +222,15 @@
     margin-top: 382px;
   }
 }
+
+@media screen and (max-width: 450px) {
+  .boton-hacia-abajo {
+    margin-top: 375px;
+  }
+}
+.container-user-cv {
+  margin-top: 9rem;
+}
+.photo {
+  margin-bottom: 99px;
+}
