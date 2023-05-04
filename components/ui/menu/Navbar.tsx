@@ -96,6 +96,7 @@ export const Navbar = () => {
               style={{
                 display: "flex",
                 justifyContent: "center",
+                marginLeft: "6px",
               }}
             >
               <Switch
