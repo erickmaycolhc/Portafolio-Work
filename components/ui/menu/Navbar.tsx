@@ -53,7 +53,7 @@ export const Navbar = () => {
             {/* logo de mi nombre*/}
             <img
               className={styles["edit-logo"]}
-              src="/img/logaso.png"
+              src="download/m.png"
               alt=""
               width={60}
               height={65}

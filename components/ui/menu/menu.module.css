@@ -1,7 +1,7 @@
 .header-container {
   position: fixed;
   z-index: 3;
-  background-color: #95d204;
+  background-color: #3e3232;
   height: 112px;
   width: 100%;
   display: block;
@@ -24,7 +24,7 @@
   /* background-color: green; */
 }
 .menu-container a {
-  color: black;
+  color: #ffd163;
   margin-left: 15px;
   font-family: "Roboto", sans-serif;
   text-decoration: none;

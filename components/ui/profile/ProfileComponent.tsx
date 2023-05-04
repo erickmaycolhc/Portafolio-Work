@@ -3,7 +3,7 @@ import styles from "./ProfileComponent.module.css";
 
 const ProfileComponent = () => {
   return (
-    <section className={styles["section"]}>
+    <section className={styles["section"]} id="sobre-mi">
       <div className={styles["container"]}>
         <div className={styles["title-about"]}>
           <h1> Sobre mi</h1>

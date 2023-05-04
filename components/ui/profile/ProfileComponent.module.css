@@ -32,11 +32,13 @@
 
 .photo {
   /* background-color: aqua; */
-  width: 40rem;
-  height: 40rem;
+  /* width: 40rem;
+  height: 40rem; */
 }
 .photo img {
   border-radius: 6rem;
+  width: 127rem;
+  height: 40rem;
 }
 
 .container-descrip-skills {
@@ -191,4 +193,17 @@
 
 .gap-2 a {
   margin: 0px 8px;
+}
+
+@media screen and (max-width: 1250px) {
+  .title-about h1 {
+    /* background-color: red; */
+    font-size: 5rem;
+  }
+
+  .photo img {
+    border-radius: 6rem;
+    width: 100rem;
+    height: 30rem;
+  }
 }
