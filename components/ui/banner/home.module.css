@@ -111,9 +111,6 @@
     margin-left: 80px;
   }
   .photo {
-    display: inherit;
-
-    flex-basis: 30%;
   }
 }
 
@@ -122,9 +119,6 @@
     margin-left: 100px;
   }
   .photo {
-    display: inherit;
-
-    flex-basis: 30%;
   }
   .boton-hacia-abajo span {
     width: 2vw;
@@ -152,9 +146,6 @@
     font-size: 40px;
   }
   .photo {
-    display: inherit;
-
-    flex-basis: 30%;
   }
 }
 
@@ -191,7 +182,6 @@
     display: inherit;
     flex-basis: 30%;
     max-width: 327px;
-    /* background-color: yellow; */
     margin-bottom: 103px;
   }
   .container-user-cv {
