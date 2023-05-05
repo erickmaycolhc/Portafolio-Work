@@ -57,6 +57,10 @@
   width: 100%;
   margin-top: 4rem;
 }
+.description {
+  height: auto;
+  width: auto;
+}
 
 .container-cuerpo-menu {
   /* background-color: rgb(172, 71, 34); */
@@ -229,15 +233,16 @@
   }
 }
 
-/* @media screen and (max-width: 1080px) {
+@media screen and (max-width: 1080px) {
   .photo img {
-    width: 123rem;
-    height: 33rem;
+    width: 110rem;
+    height: 30rem;
   }
-  .description {
-    margin-top: 1rem;
-  }
-} */
+  /* .description {
+    height: 15rem;
+    width: 29rem;
+  } */
+}
 
 @media screen and (max-width: 750px) {
   .container-about {
@@ -259,10 +264,10 @@
     height: 18rem;
   }
 
-  .description {
+  /* .description {
     height: 15rem;
     width: 29rem;
-  }
+  } */
   .container-description {
     display: flex;
     justify-content: center;
