@@ -1,5 +1,6 @@
 .section {
   /* background-color: blueviolet; */
+  padding-top: 7rem;
 }
 
 .container {
@@ -9,25 +10,28 @@
   padding: 0px 15px;
   height: 100%;
   justify-content: center;
+  padding-bottom: 7rem;
 }
 
 .title-about {
   /* background-color: red; */
   display: flex;
   justify-content: center;
+  /* margin-bottom: 70px; */
 }
 
 .title-about h1 {
   /* background-color: red; */
   color: white;
-  font-size: 9rem;
+  font-size: 7rem;
 }
 
 .container-about {
   /* background-color: orange; */
   display: flex;
   justify-content: center;
-  margin-top: 15px;
+  padding-top: 60px;
+  padding: 34px 15px;
 }
 
 .photo {
@@ -37,8 +41,8 @@
 }
 .photo img {
   border-radius: 6rem;
-  width: 127rem;
-  height: 40rem;
+  width: 145rem;
+  height: 35rem;
 }
 
 .container-descrip-skills {
@@ -194,16 +198,83 @@
 .gap-2 a {
   margin: 0px 8px;
 }
+@media screen and (max-width: 1925px) {
+  .container-about {
+    /* background-color: orange; */
+    padding: 20px 15px;
+  }
+  .description {
+    margin-top: 2rem;
+  }
+}
 
-@media screen and (max-width: 1250px) {
-  .title-about h1 {
-    /* background-color: red; */
-    font-size: 5rem;
+@media screen and (max-width: 1300px) {
+  .photo img {
+    border-radius: 6rem;
+    width: 135rem;
+    height: 34rem;
+  }
+  .photo {
+    margin-left: 110px;
+  }
+}
+
+@media screen and (max-width: 1130px) {
+  .photo img {
+    width: 123rem;
+    height: 33rem;
+  }
+  .description {
+    margin-top: 1rem;
+  }
+}
+
+/* @media screen and (max-width: 1080px) {
+  .photo img {
+    width: 123rem;
+    height: 33rem;
+  }
+  .description {
+    margin-top: 1rem;
+  }
+} */
+
+@media screen and (max-width: 750px) {
+  .container-about {
+    /* background-color: orange; */
+    display: flex;
+    flex-direction: column;
+    padding-top: 60px;
+    padding: 34px 15px;
+  }
+  .photo {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 39px;
+    margin: 0;
   }
 
   .photo img {
-    border-radius: 6rem;
-    width: 100rem;
-    height: 30rem;
+    width: 24rem;
+    height: 24rem;
+  }
+
+  .description {
+    height: 15rem;
+    width: 29rem;
+  }
+  .container-description {
+    display: flex;
+    justify-content: center;
+  }
+
+  .container-skills-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .skills-container h4 {
+    display: flex;
+    justify-content: center;
   }
 }
