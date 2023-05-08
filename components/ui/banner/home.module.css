@@ -1,5 +1,5 @@
 .container-header-perfile {
-  max-width: 1200px;
+  max-width: 1500px;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -8,6 +8,8 @@
 }
 .container-user-cv {
   flex-basis: 50%;
+  margin-left: 6rem;
+  width: 100%;
 }
 .ocupación {
   color: white;
@@ -18,9 +20,19 @@
   display: inherit;
   padding: 0 15px;
   flex-basis: 50%;
+
+  width: 100%;
+  /* width: 75vw;
+  max-width: 1000px;
+  min-width: 320px;
+  margin: auto; */
 }
 .photo img {
-  border-radius: 100%;
+  border-radius: 7%;
+  height: 27rem;
+  width: 41rem;
+  /* width: 100%; */
+  /* box-shadow: 0px 3px 5px rgba(15, 15, 15, 0.5);  */
 }
 
 .hola {
@@ -103,30 +115,28 @@
   }
 }
 
-@media screen and (max-width: 1300px) {
-  /* .nombre-name {
-    font-size: 30px;
-  } */
-  .container-user-cv {
-    margin-left: 80px;
+@media screen and (max-width: 1440px) {
+  .photo img {
+    height: 25rem;
+    width: 34rem;
   }
-  .photo {
+  .container-user-cv {
+    padding: 0px 81px;
   }
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1024px) {
   .container-user-cv {
-    margin-left: 100px;
+    margin: 0;
+    padding: 0px 79px;
   }
-  .photo {
-  }
-  .boton-hacia-abajo span {
-    width: 2vw;
-    height: 2vw;
+  .photo img {
+    height: 23rem;
+    width: 27rem;
   }
 }
 
-@media screen and (max-width: 1050px) {
+/* @media screen and (max-width: 1050px) {
   .container-user-cv {
     margin-left: 120px;
   }
@@ -145,9 +155,7 @@
     color: white;
     font-size: 40px;
   }
-  .photo {
-  }
-}
+} */
 
 @media screen and (max-width: 920px) {
   .container-user-cv {
@@ -165,7 +173,7 @@
   }
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 768px) {
   .container-header-perfile {
     max-width: 1200px;
     margin: 0 auto;
@@ -179,10 +187,13 @@
   }
 
   .photo {
-    display: inherit;
-    flex-basis: 30%;
-    max-width: 327px;
-    margin-bottom: 103px;
+    display: flex;
+    justify-content: center;
+  }
+  .photo img {
+    margin-bottom: 89px;
+    height: 19rem;
+    width: 31rem;
   }
   .container-user-cv {
     text-align: center;
@@ -198,7 +209,6 @@
     margin-left: 0px;
     padding: 0 15px;
     margin-top: 11rem;
-    /* background-color: red; */
   }
   .boton-hacia-abajo span {
     width: 3vw;

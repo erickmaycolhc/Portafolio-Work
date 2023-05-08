@@ -10,7 +10,7 @@ const ProfileComponent = () => {
         </div>
         <div className={styles["container-about"]}>
           <div className={styles["photo"]}>
-            <img src="img/erick.png" alt="" />
+            <img src="img/user.png" alt="" />
           </div>
           <div className={styles["container-descrip-skills"]}>
             <div className={styles["container-description"]}>
