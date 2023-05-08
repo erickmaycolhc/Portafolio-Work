@@ -150,11 +150,10 @@
   }
 }
 
-@media screen and (max-width: 920px) {
+/* @media screen and (max-width: 920px) {
   .container-user-cv {
     margin-left: 120px;
     padding: 0 15px;
-    /* background-color: red; */
   }
   .soy {
     color: white;
@@ -164,7 +163,7 @@
     width: 2vw;
     height: 2vw;
   }
-}
+} */
 
 @media screen and (max-width: 768px) {
   .container-header-perfile {
@@ -212,18 +211,9 @@
   }
 }
 
-@media screen and (max-width: 450px) {
-  .boton-hacia-abajo {
-    margin-top: 345px;
-  }
-
-  .container-user-cv {
-    margin-top: 9rem;
-  }
-
-  .photo {
-    max-width: 281px;
-    margin-bottom: 103px;
-    margin-bottom: 129px;
+@media screen and (max-width: 425px) {
+  .photo img {
+    height: 15rem;
+    width: 22rem;
   }
 }
