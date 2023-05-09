@@ -226,10 +226,30 @@
   }
 }
 
+@media screen and (max-width: 557px) {
+  .photo img {
+    height: 14rem;
+    width: 25rem;
+  }
+  .boton-hacia-abajo {
+    margin-top: 354px;
+  }
+}
+
 @media screen and (max-width: 425px) {
   .photo img {
     height: 15rem;
     width: 22rem;
+  }
+}
+
+@media screen and (max-width: 379px) {
+  .nombre-name {
+    font-size: 40px;
+  }
+  .photo img {
+    height: 15rem;
+    width: 19rem;
   }
 }
 
