@@ -115,6 +115,21 @@
   }
 }
 
+@media screen and (max-width: 1829px) {
+  .photo img {
+    height: 25rem;
+    width: 37rem;
+  }
+
+  .boton-hacia-abajo span {
+    width: 2vw;
+    height: 2vw;
+  }
+  .boton-hacia-abajo {
+    margin-top: 320px;
+  }
+}
+
 @media screen and (max-width: 1440px) {
   .photo img {
     height: 25rem;
@@ -215,5 +230,28 @@
   .photo img {
     height: 15rem;
     width: 22rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .nombre-name {
+    font-size: 40px;
+  }
+  .photo img {
+    height: 15rem;
+    width: 19rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .nombre-name {
+    font-size: 30px;
+  }
+  .photo img {
+    height: 16rem;
+    width: 19rem;
+  }
+  .photo {
+    margin-bottom: 32px;
   }
 }
