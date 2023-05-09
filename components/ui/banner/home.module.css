@@ -236,6 +236,22 @@
   }
 }
 
+@media screen and (max-width: 450px) {
+  .nombre-name {
+    font-size: 35px;
+  }
+  .photo img {
+    height: 15rem;
+    width: 19rem;
+  }
+  .boton-hacia-abajo {
+    margin-top: 300px;
+  }
+  .photo {
+    margin-bottom: 70px;
+  }
+}
+
 @media screen and (max-width: 425px) {
   .photo img {
     height: 15rem;
@@ -250,6 +266,9 @@
   .photo img {
     height: 15rem;
     width: 19rem;
+  }
+  .boton-hacia-abajo {
+    margin-top: 380px;
   }
 }
 
