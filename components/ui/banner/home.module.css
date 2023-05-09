@@ -245,10 +245,14 @@
     width: 19rem;
   }
   .boton-hacia-abajo {
-    margin-top: 300px;
+    margin-top: 320px;
   }
   .photo {
     margin-bottom: 70px;
+  }
+  .boton-hacia-abajo span {
+    width: 3vw;
+    height: 3vw;
   }
 }
 
@@ -257,28 +261,62 @@
     height: 15rem;
     width: 22rem;
   }
+  .boton-hacia-abajo span {
+    width: 3vw;
+    height: 3vw;
+  }
+}
+
+@media screen and (max-width: 416px) {
+  .nombre-name {
+    font-size: 35px;
+  }
+  .photo img {
+    height: 13rem;
+    width: 19rem;
+  }
+  .boton-hacia-abajo {
+    margin-top: 320px;
+  }
+  .photo {
+    margin-bottom: 60px;
+  }
+  .boton-hacia-abajo span {
+    width: 3vw;
+    height: 3vw;
+  }
 }
 
 @media screen and (max-width: 379px) {
   .nombre-name {
     font-size: 40px;
   }
+  .photo {
+    margin-bottom: 30px;
+  }
   .photo img {
     height: 15rem;
     width: 19rem;
   }
   .boton-hacia-abajo {
-    margin-top: 380px;
+    margin-top: 350px;
+  }
+  .boton-hacia-abajo span {
+    width: 3vw;
+    height: 3vw;
   }
 }
 
 @media screen and (max-width: 375px) {
   .nombre-name {
-    font-size: 40px;
+    font-size: 35px;
   }
   .photo img {
-    height: 15rem;
-    width: 19rem;
+    height: 13rem;
+    width: 18rem;
+  }
+  .boton-hacia-abajo {
+    margin-top: 320px;
   }
 }
 
@@ -292,5 +330,8 @@
   }
   .photo {
     margin-bottom: 32px;
+  }
+  .boton-hacia-abajo {
+    margin-top: 345px;
   }
 }
