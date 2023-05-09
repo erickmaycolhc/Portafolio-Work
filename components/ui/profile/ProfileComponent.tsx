@@ -1,12 +1,19 @@
 import React from "react";
 import styles from "./ProfileComponent.module.css";
 
-const ProfileComponent = () => {
+type Props = {
+  title: string;
+  description: string;
+  skills: string[];
+  name: string[];
+};
+
+const ProfileComponent = ({ title, description, skills, name }: Props) => {
   return (
     <section className={styles["section"]} id="sobre-mi">
       <div className={styles["container"]}>
         <div className={styles["title-about"]}>
-          <h1> Sobre mi</h1>
+          <h1>{title}</h1>
         </div>
         <div className={styles["container-about"]}>
           <div className={styles["photo"]}>
@@ -27,13 +34,7 @@ const ProfileComponent = () => {
                 <div className={styles["container-cuerpo-parrafo"]}>
                   <div className={styles["comentario-1"]}>1</div>
                   <div className={styles["descrip-erick"]}>
-                    <p>
-                      Tengo 20 años y soy estudiante de ingeniería de software
-                      en la universidad de ciencias aplicadas(UPC). Soy de Perú,
-                      Apacionado por la programación y el diseño. La zona de
-                      confort no me atrae, por eso soy autodidacta para
-                      especializarme como programador capacitado.
-                    </p>
+                    <p>{description}</p>
                   </div>
                 </div>
               </div>
@@ -47,15 +48,19 @@ const ProfileComponent = () => {
                     href="https://developer.mozilla.org/es/docs/Web/HTML"
                     target="_blank"
                   >
-                    <span className={styles["tool-tip"]}>HTML</span>
-                    <img
-                      className={styles["skill-img"]}
-                      src="download/html.svg"
-                      width={50}
-                      height={50}
-                    ></img>
+                    <span className={styles["tool-tip"]}>{name}</span>
+                    {skills.map((e) => {
+                      return (
+                        <img
+                          className={styles["skill-img"]}
+                          src={e}
+                          width={50}
+                          height={50}
+                        ></img>
+                      );
+                    })}
                   </a>
-                  <a
+                  {/* <a
                     className={styles["link-kill-img"]}
                     href="https://developer.mozilla.org/es/docs/Web/CSS"
                     target="_blank"
@@ -63,7 +68,7 @@ const ProfileComponent = () => {
                     <span className={styles["tool-tip"]}>CSS</span>
                     <img
                       className="skill-img"
-                      src="download/css.svg"
+                      // src="download/css.svg"
                       width={50}
                       height={50}
                     ></img>
@@ -76,7 +81,7 @@ const ProfileComponent = () => {
                     <span className={styles["tool-tip"]}>JavaScript</span>
                     <img
                       className="skill-img"
-                      src="download/js.svg"
+                      // src="download/js.svg"
                       width={50}
                       height={50}
                     ></img>
@@ -176,7 +181,7 @@ const ProfileComponent = () => {
                       height={50}
                       style={{ borderRadius: "20%" }}
                     ></img>
-                  </a>
+                  </a> */}
                 </div>
               </div>
             </div>

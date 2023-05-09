@@ -5,7 +5,7 @@
 
 .container {
   /* background-color: yellow; */
-  max-width: 1200px;
+  /* max-width: 1200px; */
   margin: 0 auto;
   padding: 0px 15px;
   height: 100%;
@@ -28,6 +28,7 @@
 
 .container-about {
   /* background-color: orange; */
+  max-width: 1200px;
   display: flex;
   justify-content: center;
   padding-top: 60px;
@@ -50,7 +51,7 @@
   padding: 0px 37px;
   /* background: #ff000073; */
   flex: auto;
-  width: calc(100% - 21rem);
+  /* width: calc(100% - 21rem); */
 }
 
 .description {
@@ -149,12 +150,14 @@
   /* background-color: green; */
   position: relative;
 }
-.link-kill-img:hover .skill-img {
+/* .link-kill-img:hover .skill-img {
+  scale: 1.2;
+} */
+.skill-img:hover {
+  transition: scale 0.5s;
   scale: 1.2;
 }
-.skill-img {
-  transition: scale 0.5s;
-}
+
 .link-kill-img .tool-tip {
   position: absolute;
   width: auto;
@@ -215,14 +218,6 @@
   }
 }
 
-@media screen and (max-width: 1300px) {
-  .photo img {
-    /* border-radius: 6rem;
-    width: 135rem;
-    height: 34rem; */
-  }
-}
-
 @media screen and (max-width: 1130px) {
   .photo img {
     /* width: 123rem;
@@ -241,6 +236,37 @@
   .description {
     height: 20rem;
     width: 20rem;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .photo {
+    margin: 0rem;
+    /* background: blue; */
+    margin-left: 4rem;
+  }
+  .photo img {
+    width: 26rem;
+    height: 31rem;
+  }
+
+  .description {
+    height: 16rem;
+    width: 26rem;
+  }
+  .comentario-1 {
+    padding: 1.5rem 0.7rem;
+    height: 213px;
+  }
+  .skills-container h4 {
+    font-size: 1.5rem;
+    padding-top: 1.5rem;
+  }
+  .gap-1 {
+    margin-top: 18px;
+  }
+
+  .gap-2 {
+    margin-top: 15px;
   }
 }
 
