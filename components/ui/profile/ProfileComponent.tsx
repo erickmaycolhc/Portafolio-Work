@@ -4,11 +4,20 @@ import styles from "./ProfileComponent.module.css";
 type Props = {
   title: string;
   description: string;
-  skills: string[];
+  url: string[];
+  url2: string[];
   name: string[];
+  name2: string[];
 };
 
-const ProfileComponent = ({ title, description, skills, name }: Props) => {
+const ProfileComponent = ({
+  title,
+  description,
+  url,
+  url2,
+  name,
+  name2,
+}: Props) => {
   return (
     <section className={styles["section"]} id="sobre-mi">
       <div className={styles["container"]}>
@@ -43,145 +52,41 @@ const ProfileComponent = ({ title, description, skills, name }: Props) => {
               <div className={styles["skills-container"]}>
                 <h4>SKILLS</h4>
                 <div className={styles["gap-1"]}>
-                  <a
-                    className={styles["link-kill-img"]}
-                    href="https://developer.mozilla.org/es/docs/Web/HTML"
-                    target="_blank"
-                  >
-                    <span className={styles["tool-tip"]}>{name}</span>
-                    {skills.map((e) => {
-                      return (
-                        <img
-                          className={styles["skill-img"]}
-                          src={e}
-                          width={50}
-                          height={50}
-                        ></img>
-                      );
-                    })}
-                  </a>
-                  {/* <a
-                    className={styles["link-kill-img"]}
-                    href="https://developer.mozilla.org/es/docs/Web/CSS"
-                    target="_blank"
-                  >
-                    <span className={styles["tool-tip"]}>CSS</span>
-                    <img
-                      className="skill-img"
-                      // src="download/css.svg"
-                      width={50}
-                      height={50}
-                    ></img>
-                  </a>
-                  <a
-                    className={styles["link-kill-img"]}
-                    href="https://developer.mozilla.org/es/docs/Web/JavaScript"
-                    target="_blank"
-                  >
-                    <span className={styles["tool-tip"]}>JavaScript</span>
-                    <img
-                      className="skill-img"
-                      // src="download/js.svg"
-                      width={50}
-                      height={50}
-                    ></img>
-                  </a>
-                  <a
-                    className={styles["link-kill-img"]}
-                    href="https://es.react.dev"
-                    target="_blank"
-                  >
-                    <span className={styles["tool-tip"]}>React</span>
-                    <img
-                      className="skill-img"
-                      src="download/reactjs.svg"
-                      width={50}
-                      height={50}
-                    ></img>
-                  </a>
-                  <a
-                    className={styles["link-kill-img"]}
-                    href="https://www.oracle.com/pe/java/"
-                    target="_blank"
-                  >
-                    <span className={styles["tool-tip"]}>Java</span>
-                    <img
-                      className="skill-img"
-                      src="download/java.svg"
-                      width={50}
-                      height={50}
-                      style={{ borderRadius: "20%" }}
-                    ></img>
-                  </a>
+                  {url.map((skill, i) => {
+                    return (
+                      <div className={styles["container-effect"]} key={skill}>
+                        <a className={styles["link-kill-img"]}>
+                          <img
+                            className={styles["skill-img"]}
+                            src={skill}
+                            width={50}
+                            height={50}
+                          ></img>
+                        </a>
+                        <span className={styles["tool-tip"]}>{name[i]}</span>
+                      </div>
+                    );
+                  })}
                 </div>
                 <div className={styles["gap-2"]}>
-                  <a
-                    className={styles["link-kill-img"]}
-                    href="https://www.mysql.com"
-                    target="_blank"
-                  >
-                    <span className={styles["tool-tip"]}>MySQL</span>
-                    <img
-                      className="skill-img"
-                      src="download/mysql.svg"
-                      width={50}
-                      height={50}
-                    ></img>
-                  </a>
-                  <a
-                    className={styles["link-kill-img"]}
-                    href="https://www.mongodb.com"
-                    target="_blank"
-                  >
-                    <span className={styles["tool-tip"]}>MongoDB</span>
-                    <img
-                      className="skill-img"
-                      src="download/mongo.svg"
-                      width={50}
-                      height={50}
-                    ></img>
-                  </a>
-                  <a
-                    className={styles["link-kill-img"]}
-                    href="https://git-scm.com"
-                    target="_blank"
-                  >
-                    <span className={styles["tool-tip"]}>Git</span>
-                    <img
-                      className="skill-img"
-                      src="download/git2.svg"
-                      width={50}
-                      height={50}
-                    ></img>
-                  </a>
-                  <a
-                    className={styles["link-kill-img"]}
-                    href="https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html"
-                    target="_blank"
-                  >
-                    <span className={styles["tool-tip"]}>Typescript</span>
-                    <img
-                      className="skill-img"
-                      src="download/typescript.png"
-                      width={50}
-                      height={50}
-                      style={{ borderRadius: "20%" }}
-                    ></img>
-                  </a>
-                  <a
-                    className={styles["link-kill-img"]}
-                    href="https://www.postman.com"
-                    target="_blank"
-                  >
-                    <span className={styles["tool-tip"]}>Postman</span>
-                    <img
-                      className="skill-img"
-                      src="download/postman.png"
-                      width={50}
-                      height={50}
-                      style={{ borderRadius: "20%" }}
-                    ></img>
-                  </a> */}
+                  {url2.map((skill2, i) => {
+                    return (
+                      <div
+                        className={styles["container-effect-2"]}
+                        key={skill2}
+                      >
+                        <a className={styles["link-kill-img-2"]}>
+                          <img
+                            className={styles["skill-img-2"]}
+                            src={skill2}
+                            width={50}
+                            height={50}
+                          ></img>
+                        </a>
+                        <span className={styles["tool-tip-2"]}>{name2[i]}</span>
+                      </div>
+                    );
+                  })}
                 </div>
               </div>
             </div>

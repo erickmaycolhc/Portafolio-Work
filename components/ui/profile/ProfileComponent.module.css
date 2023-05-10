@@ -139,52 +139,35 @@
   font-weight: 600;
 }
 
-.skills-container h4 {
-  font-size: 2rem;
-  color: white;
-  font-weight: 900;
-  margin: 0;
-  padding-top: 2rem;
-}
-.link-kill-img {
-  /* background-color: green; */
+/* efectos de iconos */
+
+.container-effect {
   position: relative;
-}
-/* .link-kill-img:hover .skill-img {
-  scale: 1.2;
-} */
-.skill-img:hover {
-  transition: scale 0.5s;
-  scale: 1.2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.link-kill-img .tool-tip {
+.tool-tip {
   position: absolute;
-  width: auto;
-  height: auto;
-  background-color: #95d204;
-  top: 0;
-  left: 50%;
-  transform: translate(-50%, 0);
-  padding: 0.5rem;
-  border-radius: 0.4rem;
-  font-weight: 600;
+  z-index: 1;
+  pointer-events: none;
+  user-select: none;
+
+  box-shadow: 0 0 10px #fff;
+  padding: 0.5rem 1rem;
+  font-size: 0.8rem;
+  border-radius: 8px;
+  top: -100%;
   opacity: 0;
-  transition: opacity 0.5s, top 0.5s;
-  color: black;
 }
-
-.link-kill-img:hover .tool-tip {
-  opacity: 1;
-  top: -3rem;
-}
-
 .tool-tip::after {
   content: "";
   position: absolute;
   width: 0;
   height: 0;
-  border-left: 10px solid #95d204;
+  border-left: 10px solid #fff;
   border-top: 5px solid transparent;
   border-bottom: 5px solid transparent;
   bottom: -10px;
@@ -192,25 +175,102 @@
   transform: rotate(90deg) translate(0, 50%);
 }
 
+.container-effect:hover .tool-tip {
+  opacity: 1;
+}
+.container-effect img {
+  display: flex;
+  position: relative;
+}
+.link-kill-img {
+  display: flex;
+}
+
+.skills-container h4 {
+  font-size: 2rem;
+  color: white;
+  font-weight: 900;
+  margin: 0;
+  padding-top: 2rem;
+}
+
+.skill-img:hover {
+  transition: scale 0.5s;
+  scale: 1.2;
+}
+.kill-img {
+  position: relative;
+}
+
 .gap-1 {
   display: flex;
   margin-top: 44px;
+  gap: 1rem;
 }
 
-.gap-1 a {
-  margin: 0px 8px;
-}
 .gap-2 {
   display: flex;
-  margin-top: 36px;
+  margin-top: 30px;
+  gap: 1rem;
 }
 
-.gap-2 a {
-  margin: 0px 8px;
+/* effect de icono 2 */
+
+.container-effect-2 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
+
+.tool-tip-2 {
+  position: absolute;
+  z-index: 1;
+  pointer-events: none;
+  user-select: none;
+
+  box-shadow: 0 0 10px #fff;
+  padding: 0.5rem 1rem;
+  font-size: 0.8rem;
+  border-radius: 8px;
+  top: 130%;
+  opacity: 0;
+}
+.tool-tip-2::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 10px solid #fff;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  bottom: 105%;
+  left: 50%;
+  transform: rotate(35deg) translate(0, 50%);
+}
+
+.container-effect-2:hover .tool-tip-2 {
+  opacity: 1;
+}
+.container-effect-2 img {
+  display: flex;
+  position: relative;
+}
+.link-kill-img-2 {
+  display: flex;
+}
+
+.skill-img-2:hover {
+  transition: scale 0.5s;
+  scale: 1.2;
+}
+.kill-img-2 {
+  position: relative;
+}
+
 @media screen and (max-width: 1925px) {
   .container-about {
-    /* background-color: orange; */
     padding: 20px 15px;
   }
   .description {
