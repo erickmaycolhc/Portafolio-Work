@@ -28,34 +28,50 @@
 
 .container-about {
   /* background-color: orange; */
-  max-width: 1200px;
+  max-width: 1400px;
   display: flex;
+  margin: 0 auto;
+  /* flex-wrap: wrap; */
   justify-content: center;
-  padding-top: 60px;
+  /* padding-top: 60px; */
   padding: 34px 15px;
+  position: relative;
 }
 
 .photo {
-  background: blue;
-  /* flex-wrap: 25%; */
+  /* background: blue; */
+  height: 36rem;
+  width: 33rem;
 }
 .photo img {
-  width: 10rem;
-  border-radius: 6rem;
-  height: 15rem;
+  width: 33rem;
+  border-radius: 25%;
+  height: 36rem;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 7px;
+}
+.container-description {
+  display: flex;
+  /* justify-content: center; */
+  /* flex-basis: 50%; */
 }
 
 .container-descrip-skills {
-  padding: 0px 37px;
-  display: flex;
+  padding: 44px 31px;
+  width: 42rem;
+  height: 20rem;
 }
+
+/* borde y contenido de about   */
 
 .description {
   /* background-color: blueviolet; */
   border: 1px solid white;
   border-radius: 2px;
   width: 100%;
-  margin-top: 4rem;
+  /* margin-top: 4rem; */
 }
 .description {
   height: auto;
@@ -182,6 +198,13 @@
   display: flex;
 }
 
+.skills-container {
+  height: 22rem;
+  width: 17rem;
+  position: absolute;
+  top: 18rem;
+  left: 41rem;
+}
 .skills-container h4 {
   font-size: 2rem;
   color: white;
