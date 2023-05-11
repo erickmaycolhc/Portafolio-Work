@@ -27,41 +27,38 @@
 }
 
 .container-about {
-  /* background-color: orange; */
   max-width: 1400px;
   display: flex;
   margin: 0 auto;
   /* flex-wrap: wrap; */
-  justify-content: center;
+  /* justify-content: center; */
   /* padding-top: 60px; */
   padding: 34px 15px;
-  position: relative;
 }
 
 .photo {
-  /* background: blue; */
-  height: 36rem;
-  width: 33rem;
+  width: 500px;
+  /* margin: 0 auto;*/
 }
 .photo img {
-  width: 33rem;
   border-radius: 25%;
-  height: 36rem;
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 7px;
+  /* padding: 7px; */
+  /* width: 60rem; */
+  /* height: 36rem;*/
 }
 .container-description {
-  display: flex;
+  /* display: flex; */
   /* justify-content: center; */
   /* flex-basis: 50%; */
 }
 
 .container-descrip-skills {
-  padding: 44px 31px;
-  width: 42rem;
-  height: 20rem;
+  padding-left: 3rem;
+  /* background: red; */
+  /* max-width: 30rem; */
+  width: calc(100% - 500px);
+  /* margin: 0 auto; */
+  /* height: 20rem;*/
 }
 
 /* borde y contenido de about   */
@@ -199,11 +196,11 @@
 }
 
 .skills-container {
-  height: 22rem;
-  width: 17rem;
-  position: absolute;
-  top: 18rem;
-  left: 41rem;
+  /* max-width: 20rem; */
+  /* margin: 0 auto; */
+  /* background-color: red; */
+  /* height: 20rem; */
+  /* padding: 10px;*/
 }
 .skills-container h4 {
   font-size: 2rem;
@@ -287,98 +284,9 @@
 .kill-img-2 {
   position: relative;
 }
-/* 
-@media screen and (max-width: 1925px) {
-  .container-about {
-    padding: 20px 15px;
-  }
-  .description {
-    margin-top: 2rem;
-  }
+
+@media screen and (max-width: 1440px) {
 }
 
-@media screen and (max-width: 1130px) {
-  .photo img {
-
-  }
-  .description {
-    margin-top: 1rem;
-  }
-}
-
-@media screen and (max-width: 1080px) {
-  .photo img {
-   
-  }
-  .description {
-    height: 20rem;
-    width: 20rem;
-  }
-}
 @media screen and (max-width: 1024px) {
-  .photo {
-    margin: 0rem;
-
-    margin-left: 4rem;
-  }
-  .photo img {
-    width: 26rem;
-    height: 31rem;
-  }
-
-  .description {
-    height: 16rem;
-    width: 26rem;
-  }
-  .comentario-1 {
-    padding: 1.5rem 0.7rem;
-    height: 213px;
-  }
-  .skills-container h4 {
-    font-size: 1.5rem;
-    padding-top: 1.5rem;
-  }
-  .gap-1 {
-    margin-top: 18px;
-  }
-
-  .gap-2 {
-    margin-top: 15px;
-  }
 }
-
-@media screen and (max-width: 750px) {
-  .container-about {
-
-    display: flex;
-    flex-direction: column;
-    padding-top: 60px;
-    padding: 34px 15px;
-  }
-  .photo {
-    display: flex;
-    justify-content: center;
-    padding-bottom: 39px;
-    margin: 0;
-  }
-
-  .photo img {
-   
-  }
-
-
-  .container-description {
-    display: flex;
-    justify-content: center;
-  }
-
-  .container-skills-container {
-    display: flex;
-    justify-content: center;
-  }
-
-  .skills-container h4 {
-    display: flex;
-    justify-content: center;
-  }
-} */

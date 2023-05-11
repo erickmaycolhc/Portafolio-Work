@@ -18,6 +18,50 @@ const ProfileComponent = ({
   name,
   name2,
 }: Props) => {
+  const componentSkill = () => {
+    return (
+      <div className={styles["skills-container"]}>
+        <h4>SKILLS</h4>
+        <div className={styles["container gaps"]}>
+          <div className={styles["gap-1"]}>
+            {url.map((skill, i) => {
+              return (
+                <div className={styles["container-effect"]} key={skill}>
+                  <a className={styles["link-kill-img"]}>
+                    <img
+                      className={styles["skill-img"]}
+                      src={skill}
+                      width={50}
+                      height={50}
+                    ></img>
+                  </a>
+                  <span className={styles["tool-tip"]}>{name[i]}</span>
+                </div>
+              );
+            })}
+          </div>
+          <div className={styles["gap-2"]}>
+            {url2.map((skill2, i) => {
+              return (
+                <div className={styles["container-effect-2"]} key={skill2}>
+                  <a className={styles["link-kill-img-2"]}>
+                    <img
+                      className={styles["skill-img-2"]}
+                      src={skill2}
+                      width={50}
+                      height={50}
+                    ></img>
+                  </a>
+                  <span className={styles["tool-tip-2"]}>{name2[i]}</span>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </div>
+    );
+  };
+
   return (
     <section className={styles["section"]} id="sobre-mi">
       <div className={styles["container"]}>
@@ -49,45 +93,89 @@ const ProfileComponent = ({
                 </div>
               </div>
             </div>
+            <div className={styles["skills-container"]}>
+              <h4>SKILLS</h4>
+              <div className={styles["container gaps"]}>
+                <div className={styles["gap-1"]}>
+                  {url.map((skill, i) => {
+                    return (
+                      <div className={styles["container-effect"]} key={skill}>
+                        <a className={styles["link-kill-img"]}>
+                          <img
+                            className={styles["skill-img"]}
+                            src={skill}
+                            width={50}
+                            height={50}
+                          ></img>
+                        </a>
+                        <span className={styles["tool-tip"]}>{name[i]}</span>
+                      </div>
+                    );
+                  })}
+                </div>
+                <div className={styles["gap-2"]}>
+                  {url2.map((skill2, i) => {
+                    return (
+                      <div
+                        className={styles["container-effect-2"]}
+                        key={skill2}
+                      >
+                        <a className={styles["link-kill-img-2"]}>
+                          <img
+                            className={styles["skill-img-2"]}
+                            src={skill2}
+                            width={50}
+                            height={50}
+                          ></img>
+                        </a>
+                        <span className={styles["tool-tip-2"]}>{name2[i]}</span>
+                      </div>
+                    );
+                  })}
+                </div>
+              </div>
+            </div>
           </div>
 
-          <div className={styles["skills-container"]}>
+          {/* <div className={styles["skills-container"]}>
             <h4>SKILLS</h4>
-            <div className={styles["gap-1"]}>
-              {url.map((skill, i) => {
-                return (
-                  <div className={styles["container-effect"]} key={skill}>
-                    <a className={styles["link-kill-img"]}>
-                      <img
-                        className={styles["skill-img"]}
-                        src={skill}
-                        width={50}
-                        height={50}
-                      ></img>
-                    </a>
-                    <span className={styles["tool-tip"]}>{name[i]}</span>
-                  </div>
-                );
-              })}
+            <div className={styles["container gaps"]}>
+              <div className={styles["gap-1"]}>
+                {url.map((skill, i) => {
+                  return (
+                    <div className={styles["container-effect"]} key={skill}>
+                      <a className={styles["link-kill-img"]}>
+                        <img
+                          className={styles["skill-img"]}
+                          src={skill}
+                          width={50}
+                          height={50}
+                        ></img>
+                      </a>
+                      <span className={styles["tool-tip"]}>{name[i]}</span>
+                    </div>
+                  );
+                })}
+              </div>
+              <div className={styles["gap-2"]}>
+                {url2.map((skill2, i) => {
+                  return (
+                    <div className={styles["container-effect-2"]} key={skill2}>
+                      <a className={styles["link-kill-img-2"]}>
+                        <img
+                          className={styles["skill-img-2"]}
+                          src={skill2}
+                          width={50}
+                          height={50}
+                        ></img>
+                      </a>
+                      <span className={styles["tool-tip-2"]}>{name2[i]}</span>
+                    </div>
+                  );
+                })}
+              </div>
             </div>
-            <div className={styles["gap-2"]}>
-              {url2.map((skill2, i) => {
-                return (
-                  <div className={styles["container-effect-2"]} key={skill2}>
-                    <a className={styles["link-kill-img-2"]}>
-                      <img
-                        className={styles["skill-img-2"]}
-                        src={skill2}
-                        width={50}
-                        height={50}
-                      ></img>
-                    </a>
-                    <span className={styles["tool-tip-2"]}>{name2[i]}</span>
-                  </div>
-                );
-              })}
-            </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>
