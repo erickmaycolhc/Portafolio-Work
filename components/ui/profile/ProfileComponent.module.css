@@ -357,7 +357,7 @@
 }
 @media screen and (max-width: 450px) {
   .title-about h1 {
-    font-size: 4rem;
+    font-size: 3rem;
   }
   .photo img {
     height: 15rem;
@@ -378,7 +378,7 @@
 
 @media screen and (max-width: 425px) {
   .title-about h1 {
-    font-size: 4rem;
+    font-size: 3rem;
   }
   .photo img {
     height: 14rem;
@@ -389,7 +389,7 @@
   }
 
   .container-descrip-skills {
-    margin-top: 1rem;
+    margin-top: 2rem;
   }
 
   .skills-container {
