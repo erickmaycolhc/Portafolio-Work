@@ -196,6 +196,7 @@
   .photo {
     display: flex;
     justify-content: center;
+    padding-top: 2rem;
   }
   .photo img {
     margin-bottom: 100px;
@@ -213,10 +214,13 @@
     justify-content: center;
   }
   .container-user-cv {
-    margin-left: 0px;
+    /* margin-left: 0px;
     padding: 0 15px;
     margin-top: 6rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1rem; */
+    flex: none;
+    margin: 0;
+    padding-top: 4rem;
   }
   .boton-hacia-abajo span {
     width: 3vw;
@@ -308,7 +312,7 @@
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 360px) {
   .nombre-name {
     font-size: 35px;
   }
@@ -318,6 +322,14 @@
   }
   .boton-hacia-abajo {
     margin-top: 320px;
+  }
+
+  .photo {
+    margin: 0;
+  }
+  .container-user-cv {
+    margin-top: 3rem;
+    margin-bottom: 1rem;
   }
 }
 
