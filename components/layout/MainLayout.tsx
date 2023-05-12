@@ -1,6 +1,6 @@
 import Head from "next/head";
 import { Navbar } from "../ui/menu/Navbar";
-import { ReactNode } from "react";
+import { ReactNode, useEffect } from "react";
 import { ParticlesBackground } from "../config/ParticlesBackbround";
 
 interface Props {
@@ -8,6 +8,12 @@ interface Props {
 }
 
 export const MainLayout = ({ children }: Props) => {
+  useEffect(() => {
+    console.log("Width : movil: App" + window.innerWidth);
+    console.log("Height : movil App" + window.innerHeight);
+    alert("Width: " + window.innerWidth);
+    alert("Height: " + window.innerHeight);
+  }, []);
   return (
     <>
       <ParticlesBackground />
