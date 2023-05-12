@@ -356,7 +356,25 @@
   }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 650px) {
+  .title-about h1 {
+    font-size: 4rem;
+  }
+  .photo img {
+    height: 16rem;
+  }
+
+  .container-about {
+    padding: 1rem 1rem;
+  }
+
+  .container-descrip-skills {
+    margin-top: 2rem;
+  }
+
+  .skills-container {
+    margin-top: 1rem;
+  }
 }
 
 @media screen and (max-width: 425px) {
