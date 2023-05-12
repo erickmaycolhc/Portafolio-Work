@@ -55,8 +55,8 @@ export const Navbar = () => {
               className={styles["edit-logo"]}
               src="download/m.png"
               alt=""
-              width={60}
-              height={65}
+              width={55}
+              height={60}
             />
           </Link>
           {/* ///////////////////////////////////////////////////////////////////// */}
@@ -66,11 +66,9 @@ export const Navbar = () => {
               onClick={handlerOnClickMenu}
             >
               {isOpen ? (
-                <CloseIcon
-                  sx={{ color: "white", fontSize: "50px", padding: "0" }}
-                />
+                <CloseIcon fontSize="large" sx={{ color: "white" }} />
               ) : (
-                <MenuIcon sx={{ color: "white", fontSize: "50px" }} />
+                <MenuIcon fontSize="large" sx={{ color: "white" }} />
               )}
             </IconButton>
           </div>
