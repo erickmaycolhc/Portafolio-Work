@@ -355,8 +355,7 @@
     justify-content: center;
   }
 }
-
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 450px) {
   .title-about h1 {
     font-size: 4rem;
   }
@@ -365,7 +364,7 @@
   }
 
   .container-about {
-    padding: 1rem 1rem;
+    padding: 0rem 1rem;
   }
 
   .container-descrip-skills {
