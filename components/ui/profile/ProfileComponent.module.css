@@ -356,9 +356,15 @@
   }
 }
 
+@media screen and (max-width: 450px) {
+}
+
 @media screen and (max-width: 425px) {
   .title-about h1 {
     font-size: 4rem;
+  }
+  .photo img {
+    height: 16rem;
   }
 
   .container-about {
@@ -367,5 +373,9 @@
 
   .container-descrip-skills {
     margin-top: 2rem;
+  }
+
+  .skills-container {
+    margin-top: 1rem;
   }
 }
