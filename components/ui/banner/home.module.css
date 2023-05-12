@@ -6,10 +6,12 @@
   height: 100%;
   padding: 0 15px;
 }
+
 .container-user-cv {
   flex-basis: 50%;
   margin-left: 6rem;
   width: 100%;
+  padding-bottom: 2rem;
 }
 .ocupación {
   color: white;
@@ -180,7 +182,7 @@
   }
 } */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   .container-header-perfile {
     max-width: 1200px;
     margin: 0 auto;
@@ -189,8 +191,6 @@
     height: 100%;
     padding: 0 15px;
     flex-direction: column;
-    /* margin-top: 8rem; */
-    /* background-color: red; */
   }
 
   .photo {
@@ -198,7 +198,7 @@
     justify-content: center;
   }
   .photo img {
-    margin-bottom: 89px;
+    margin-bottom: 100px;
     height: 19rem;
     width: 31rem;
   }
@@ -215,7 +215,8 @@
   .container-user-cv {
     margin-left: 0px;
     padding: 0 15px;
-    margin-top: 11rem;
+    margin-top: 6rem;
+    margin-bottom: 1rem;
   }
   .boton-hacia-abajo span {
     width: 3vw;

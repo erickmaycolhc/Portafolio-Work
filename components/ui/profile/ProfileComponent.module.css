@@ -396,3 +396,9 @@
     margin-top: 1rem;
   }
 }
+
+@media screen and (max-width: 412px) {
+  .title-about h1 {
+    font-size: 2.5rem;
+  }
+}
