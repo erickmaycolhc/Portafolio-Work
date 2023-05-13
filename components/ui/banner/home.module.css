@@ -9,7 +9,7 @@
 
 .container-user-cv {
   flex-basis: 50%;
-  margin-left: 6rem;
+  margin-left: 4rem;
   width: 100%;
   padding-bottom: 2rem;
 }
@@ -137,9 +137,7 @@
     height: 25rem;
     width: 34rem;
   }
-  .container-user-cv {
-    padding: 0px 81px;
-  }
+
   .boton-hacia-abajo span {
     width: 2.5vw;
     height: 2.5vw;
@@ -149,9 +147,14 @@
   }
 }
 
+@media screen and (max-width: 1111px) {
+  .container-user-cv {
+    padding: 0 !important;
+  }
+}
+
 @media screen and (max-width: 1024px) {
   .container-user-cv {
-    margin: 0;
     padding: 0px 79px;
   }
   .photo img {
@@ -167,20 +170,11 @@
   }
 }
 
-/* @media screen and (max-width: 920px) {
+@media screen and (max-width: 816px) {
   .container-user-cv {
-    margin-left: 120px;
-    padding: 0 15px;
+    margin-left: 2rem;
   }
-  .soy {
-    color: white;
-    font-size: 25px;
-  }
-  .boton-hacia-abajo span {
-    width: 2vw;
-    height: 2vw;
-  }
-} */
+}
 
 @media screen and (max-width: 760px) {
   .container-header-perfile {
@@ -191,6 +185,8 @@
     height: 100%;
     padding: 0 15px;
     flex-direction: column;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
   }
 
   .photo {
@@ -214,10 +210,8 @@
     justify-content: center;
   }
   .container-user-cv {
-    /* margin-left: 0px;
-    padding: 0 15px;
-    margin-top: 6rem;
-    margin-bottom: 1rem; */
+    margin-top: 5rem;
+    margin-bottom: 2rem;
     flex: none;
     margin: 0;
     padding-top: 4rem;
