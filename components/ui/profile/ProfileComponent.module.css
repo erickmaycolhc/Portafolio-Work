@@ -4,8 +4,6 @@
 }
 
 .container {
-  /* background-color: yellow; */
-  /* max-width: 1200px; */
   margin: 0 auto;
   padding: 0px 15px;
   height: 100%;
@@ -14,14 +12,11 @@
 }
 
 .title-about {
-  /* background-color: red; */
   display: flex;
   justify-content: center;
-  /* margin-bottom: 70px; */
 }
 
 .title-about h1 {
-  /* background-color: red; */
   color: white;
   font-size: 7rem;
 }
@@ -30,45 +25,28 @@
   max-width: 1400px;
   display: flex;
   margin: 0 auto;
-  /* flex-wrap: wrap; */
-  /* justify-content: center; */
-  /* padding-top: 60px; */
   padding: 5rem 15px;
 }
 
 .photo {
   width: 500px;
-  /* margin: 0 auto;*/
 }
 .photo img {
   border-radius: 25%;
-  /* padding: 7px; */
-  /* width: 60rem; */
-  /* height: 36rem;*/
-}
-.container-description {
-  /* display: flex; */
-  /* justify-content: center; */
-  /* flex-basis: 50%; */
 }
 
 .container-descrip-skills {
   padding-left: 3rem;
-  /* background: red; */
-  /* max-width: 30rem; */
+
   width: calc(100% - 500px);
-  /* margin: 0 auto; */
-  /* height: 20rem;*/
 }
 
 /* borde y contenido de about   */
 
 .description {
-  /* background-color: blueviolet; */
   border: 1px solid white;
   border-radius: 2px;
   width: 100%;
-  /* margin-top: 4rem; */
 }
 .description {
   height: auto;
@@ -76,7 +54,6 @@
 }
 
 .container-cuerpo-menu {
-  /* background-color: rgb(172, 71, 34); */
   display: flex;
   outline: 1px solid white;
   border-radius: 2px 2px 0 0;
@@ -84,7 +61,6 @@
 
 .caja-semaforo {
   padding: 0.5rem 1rem;
-  /* background-color: aqua; */
 }
 
 .caja-semaforo span {
@@ -108,7 +84,6 @@
 }
 
 .caja-about {
-  /* background-color: darkgreen; */
   padding: 0.5rem 1rem;
   color: white;
   background-color: #0a0214;
@@ -195,13 +170,6 @@
   display: flex;
 }
 
-.skills-container {
-  /* max-width: 20rem; */
-  /* margin: 0 auto; */
-  /* background-color: red; */
-  /* height: 20rem; */
-  /* padding: 10px;*/
-}
 .skills-container h4 {
   font-size: 2rem;
   color: white;
