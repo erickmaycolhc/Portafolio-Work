@@ -1,9 +1,15 @@
 import { MainLayout } from "@/components/layout/MainLayout";
 import { Banner } from "@/components/ui";
-import { Portafolio } from "@/components/ui/portafolio";
-import ProfileComponent from "@/components/ui/profile/ProfileComponent";
+import { Portafolio } from "@/components/shared/portafolio";
+import ProfileComponent from "@/components/shared/profile/ProfileComponent";
+import { useEffect } from "react";
+import listProject from "@/data/projects/projects.json";
 
 export default function HomePage() {
+  useEffect(() => {
+    console.log("project=>>", listProject);
+    return () => {};
+  }, []);
   return (
     <>
       <MainLayout>
@@ -31,6 +37,7 @@ export default function HomePage() {
             name={["HTML", "CSS", "Typescript", "JavaScript", "React"]}
             name2={["Java", "MySQL", "MongoDB", "Github", "Postman"]}
           />
+
           <Portafolio />
         </div>
       </MainLayout>

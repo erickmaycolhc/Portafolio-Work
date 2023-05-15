@@ -1,2 +1,2 @@
-export * from "./menu";
-export * from "./banner";
+export * from "../shared/menu";
+export * from "../shared/banner";

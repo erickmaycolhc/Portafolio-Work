@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./home.module.css";
 // import styles from "../menu/menu.module.css";
-import { ButttonCv } from "../boton-cv/butttonCv";
+import { ButttonCv } from "../../ui/boton-cv/butttonCv";
 
 export const Banner = () => {
   return (

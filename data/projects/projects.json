@@ -1,0 +1,47 @@
+[
+  {
+    "link": "https://pokemoness.vercel.app",
+    "img": "download/pokemones.png",
+    "title": "Pokemones",
+    "tecnologies": [
+      {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/react/react-original.svg"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/typescript/typescript-original.svg"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/mongodb/mongodb-original.svg"
+      },
+      {
+        "url": "https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg"
+      }
+    ],
+    "ver": "https://pokemoness.vercel.app",
+    "linkCode": "https://github.com/erickmaycolhc/pokemones"
+  },
+  {
+    "link": "https://open-jira-ebon-rho.vercel.app",
+    "img": "download/openJira.png",
+    "title": "OpenJira",
+    "tecnologies": [
+      {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/react/react-original.svg"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/typescript/typescript-original.svg"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/mongodb/mongodb-original.svg"
+      },
+      {
+        "url": "https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/docker/docker-original-wordmark.svg"
+      }
+    ],
+    "ver": "https://open-jira-ebon-rho.vercel.app",
+    "linkCode": "https://github.com/erickmaycolhc/OpenJira"
+  }
+]

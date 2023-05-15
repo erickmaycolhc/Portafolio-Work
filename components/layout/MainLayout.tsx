@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { Navbar } from "../ui/menu/Navbar";
+import { Navbar } from "../shared/menu/Navbar";
 import { ReactNode, useEffect } from "react";
 import { ParticlesBackground } from "../config/ParticlesBackbround";
 
