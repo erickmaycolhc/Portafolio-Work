@@ -23,6 +23,8 @@
 .container-title-portafolio {
   display: flex;
   justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .container-title-portafolio h1 {
@@ -40,5 +42,10 @@
 @media screen and (max-width: 760px) {
   .container-page-portafolio {
     padding-top: 5rem;
+  }
+}
+@media screen and (max-width: 425px) {
+  .container-title-portafolio h1 {
+    font-size: 5rem;
   }
 }

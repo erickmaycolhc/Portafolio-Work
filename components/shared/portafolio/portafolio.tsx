@@ -16,7 +16,7 @@ export const Portafolio = () => {
               <h1>Portafolio</h1>
             </div>
             <div className={styles["container-grid"]}>
-              <Grid.Container gap={2} justify="flex-start">
+              <Grid.Container gap={2} justify="center">
                 {listProjects.map((project, index) => {
                   return (
                     <CardProject
