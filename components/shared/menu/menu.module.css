@@ -1,7 +1,9 @@
 .header-container {
   position: fixed;
   z-index: 3;
-  background-color: #3e3232;
+  /* background: linear-gradient(#ff94a733, blue); */
+  background: linear-gradient(#7339c5, black);
+  /* border-radius: 10px; */
   height: 112px;
   width: 100%;
   display: block;

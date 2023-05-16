@@ -1,7 +1,5 @@
 .container-page {
   position: relative;
-  z-index: 2;
-  height: 100vh;
   padding-top: 7rem;
 }
 @media screen and (max-width: 760px) {

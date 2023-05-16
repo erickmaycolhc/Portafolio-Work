@@ -1,0 +1,10 @@
+.container-footer {
+  background-color: white;
+  height: 200px;
+  max-width: 1920px;
+  position: relative;
+  z-index: 1;
+}
+.h1 {
+  color: blue;
+}

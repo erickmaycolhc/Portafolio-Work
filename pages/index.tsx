@@ -1,9 +1,10 @@
 import { MainLayout } from "@/components/layout/MainLayout";
-import { Banner } from "@/components/ui";
 import { Portafolio } from "@/components/shared/portafolio";
 import ProfileComponent from "@/components/shared/profile/ProfileComponent";
 import { useEffect } from "react";
 import listProject from "@/data/projects/projects.json";
+import { Banner } from "@/components/shared/banner";
+import { Footer } from "@/components/shared/footer/footer";
 
 export default function HomePage() {
   useEffect(() => {
@@ -40,6 +41,7 @@ export default function HomePage() {
 
           <Portafolio />
         </div>
+        <Footer />
       </MainLayout>
     </>
   );

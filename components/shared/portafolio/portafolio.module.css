@@ -1,7 +1,7 @@
 .container-page-portafolio {
   position: relative;
   z-index: 2;
-  height: 100vh;
+  /* height: 100vh; */
   padding-top: 7rem;
   /* background-color: rgba(255, 0, 0, 0.467); */
 }

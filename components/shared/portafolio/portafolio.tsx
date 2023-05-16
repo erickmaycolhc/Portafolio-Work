@@ -6,10 +6,7 @@ import listProjects from "@/data/projects/projects.json";
 export const Portafolio = () => {
   return (
     <>
-      <div
-        className={styles["container-section-portafolio"]}
-        style={{ height: "500px" }}
-      >
+      <div className={styles["container-section-portafolio"]}>
         <section className={styles["section"]} id="portafolio">
           <div className={styles["container"]}>
             <div className={styles["container-title-portafolio"]}>
@@ -26,6 +23,7 @@ export const Portafolio = () => {
                       tecnologies={project.tecnologies}
                       ver={project.ver}
                       linkCode={project.linkCode}
+                      key={index}
                     />
                   );
                 })}

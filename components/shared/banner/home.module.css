@@ -3,8 +3,9 @@
   margin: 0 auto;
   display: flex;
   align-items: center;
-  height: 100%;
+  height: calc(100vh - 7rem);
   padding: 0 15px;
+  position: relative;
 }
 
 .container-user-cv {
@@ -62,7 +63,7 @@
 
 .boton-hacia-abajo {
   position: absolute;
-  top: 50%;
+  bottom: 10%;
   left: 50%;
   transform: translate(-50%, -50%);
   transform: rotate(0deg);
