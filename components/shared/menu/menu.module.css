@@ -129,7 +129,7 @@
     min-height: 0;
     display: none;
     text-align: center;
-    background-color: #3e3232 !important;
+    background: linear-gradient(black, #7339c5) !important;
   }
 
   .items-menu a {
@@ -164,7 +164,7 @@
 
   .dark {
     /* margin-left: 12px; */
-    background-color: #3e3232 !important;
+    background: linear-gradient(#7339c5, #7339c5) !important;
   }
   .menu-container a {
     padding: 0;
