@@ -56,14 +56,15 @@
   font-size: 16px;
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 515px) {
   .footer {
-    /* background-color: rgba(255, 255, 0, 0.62); */
-    display: block;
+    flex-flow: column;
   }
   .container-redes {
-    /* background-color: green; */
     display: flex;
     justify-content: center;
   }
+}
+
+@media screen and (max-width: 447px) {
 }
