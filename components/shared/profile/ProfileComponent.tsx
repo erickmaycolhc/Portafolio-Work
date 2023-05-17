@@ -1,11 +1,20 @@
 import React from "react";
 import styles from "./ProfileComponent.module.css";
 
+interface Vinculo {
+  image: string;
+  link: string;
+}
+interface Vinculo2 {
+  image: string;
+  link: string;
+}
+
 type Props = {
   title: string;
   description: string;
-  url: string[];
-  url2: string[];
+  url: Vinculo[];
+  url2: Vinculo2[];
   name: string[];
   name2: string[];
 };
@@ -26,11 +35,15 @@ const ProfileComponent = ({
           <div className={styles["gap-1"]}>
             {url.map((skill, i) => {
               return (
-                <div className={styles["container-effect"]} key={skill}>
-                  <a className={styles["link-kill-img"]}>
+                <div className={styles["container-effect"]} key={i}>
+                  <a
+                    className={styles["link-kill-img"]}
+                    href={skill.link}
+                    target="_blank"
+                  >
                     <img
                       className={styles["skill-img"]}
-                      src={skill}
+                      src={skill.image}
                       width={50}
                       height={50}
                     ></img>
@@ -43,11 +56,15 @@ const ProfileComponent = ({
           <div className={styles["gap-2"]}>
             {url2.map((skill2, i) => {
               return (
-                <div className={styles["container-effect-2"]} key={skill2}>
-                  <a className={styles["link-kill-img-2"]}>
+                <div className={styles["container-effect-2"]} key={i}>
+                  <a
+                    className={styles["link-kill-img-2"]}
+                    href={skill2.link}
+                    target="_blank"
+                  >
                     <img
                       className={styles["skill-img-2"]}
-                      src={skill2}
+                      src={skill2.image}
                       width={50}
                       height={50}
                     ></img>

@@ -2,6 +2,7 @@ import Link from "next/link";
 import styles from "./redes.module.css";
 
 import { Avatar, Grid } from "@nextui-org/react";
+
 interface SocialNetworks {
   icon: React.ReactNode;
   link: string;
