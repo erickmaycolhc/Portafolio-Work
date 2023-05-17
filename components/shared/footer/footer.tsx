@@ -48,7 +48,7 @@ export const Footer = () => {
                 <Grid xs={12}>
                   <Grid style={{ display: "flex" }}>
                     <Link
-                      href="https://www.linkedin.com/in/erick-maycol-hc-686084264/"
+                      href="https://mail.google.com/mail/u/0/#inbox"
                       target="_blank"
                     >
                       <Avatar
