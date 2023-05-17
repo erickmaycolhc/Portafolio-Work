@@ -14,7 +14,7 @@ type Props = {
 export const Redes = ({ socialNetworks }: Props) => {
   return (
     <Grid.Container gap={1}>
-      <Grid xs={12}>
+      <Grid xs={12} style={{ display: "flex", justifyContent: "center" }}>
         <Grid style={{ display: "flex" }} className={`${styles["containers"]}`}>
           {socialNetworks.map(({ icon, link }) => {
             return (

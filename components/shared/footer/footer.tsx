@@ -66,12 +66,12 @@ export const Footer = () => {
                 </Grid>
               </Grid.Container>
             </div>
-            <div className={styles["container-contac"]}>
+            <div className={styles["container-contacts"]}>
               <Grid.Container gap={1}>
                 <Grid xs={12}>
                   <Grid style={{ display: "flex" }}>
                     <Link
-                      href="https://www.linkedin.com/in/erick-maycol-hc-686084264/"
+                      href="https://api.whatsapp.com/send/?phone=993192658&text&type=phone_number&app_absent=0"
                       target="_blank"
                     >
                       <Avatar
