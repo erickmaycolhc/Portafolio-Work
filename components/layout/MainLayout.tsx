@@ -1,6 +1,6 @@
 import Head from "next/head";
 import { Navbar } from "../shared/menu/Navbar";
-import { ReactNode, useEffect } from "react";
+import { ReactNode } from "react";
 import { ParticlesBackground } from "../config/ParticlesBackbround";
 
 interface Props {
