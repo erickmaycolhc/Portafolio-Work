@@ -10,6 +10,7 @@ interface Props {
 const origin = typeof window === "undefined" ? "" : window.location.origin;
 
 export const MainLayout = ({ children }: Props) => {
+  console.log(origin);
   // useEffect(() => {
   //   console.log("Width : movil: App" + window.innerWidth);
   //   console.log("Height : movil App" + window.innerHeight);
@@ -30,7 +31,7 @@ export const MainLayout = ({ children }: Props) => {
           property="og:description"
           content="Este es mi portafolio espero y les guste."
         />
-        <meta property="og:image" content={`${origin}/img/m.png`} />
+        <meta property="og:image" content={`${origin}/img/e.png`} />
       </Head>
       <Navbar />
 
