@@ -31,7 +31,7 @@ export const MainLayout = ({ children }: Props) => {
           property="og:description"
           content="Este es mi portafolio espero y les guste."
         />
-        <meta property="og:image" content="http://localhost:3000/img/m.png" />
+        <meta property="og:image" content={`${origin}/img/e.png`} />
       </Head>
       <Navbar />
 
