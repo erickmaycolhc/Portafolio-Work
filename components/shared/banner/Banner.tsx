@@ -23,7 +23,7 @@ export const Banner = () => {
           </div>
         </div>
         <div className={styles["photo"]}>
-          <img src="img/m.png" alt="" />
+          <img src="img/mm.png" alt="" />
         </div>
         <div className={styles["boton-hacia-abajo"]}>
           <span></span>
