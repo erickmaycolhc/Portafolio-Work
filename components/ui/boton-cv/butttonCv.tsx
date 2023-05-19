@@ -38,7 +38,7 @@ export const ButttonCv = () => {
 
   return (
     <Button
-      css={{ marginTop: 20 }}
+      css={{ marginTop: 20, zIndex: 1 }}
       color={"gradient"}
       onClick={() => {
         handleOnClickConfetti();
