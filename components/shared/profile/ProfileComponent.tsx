@@ -87,7 +87,7 @@ const ProfileComponent = ({
         </div>
         <div className={styles["container-about"]}>
           <div className={styles["photo"]}>
-            <img src="img/userr.png" alt="" />
+            <img src="img/user.png" alt="" />
           </div>
 
           <div className={styles["container-descrip-skills"]}>
