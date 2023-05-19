@@ -71,7 +71,7 @@ export const Footer = () => {
                 <Grid xs={12}>
                   <Grid style={{ display: "flex" }}>
                     <Link
-                      href="https://api.whatsapp.com/send/?phone=993192658&text&type=phone_number&app_absent=0"
+                      href="https://api.whatsapp.com/send/?phone=993192658&text=Hola te escribo desde la web&type=phone_number&app_absent=0"
                       target="_blank"
                     >
                       <Avatar

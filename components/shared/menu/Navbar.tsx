@@ -1,41 +1,42 @@
 import Link from "next/link";
-import { ActiveLink } from "./ActiveLinxs";
+import { Menu } from "./Menu";
 import styles from "./menu.module.css";
-import { Avatar, Button, Grid, Switch, Spacer } from "@nextui-org/react";
-import SunIcon from "@/components/utils/SunIcon";
-import MoonIcon from "@/components/utils/MoonIcon";
-import { ParticlesBackground } from "@/components/config/ParticlesBackbround";
+import { Grid, Switch, Spacer } from "@nextui-org/react";
 import MenuIcon from "@mui/icons-material/Menu";
 import { IconButton } from "@mui/material";
 import { useEffect, useState } from "react";
 import CloseIcon from "@mui/icons-material/Close";
 
-const menuItems = [
-  {
-    text: "Inicio",
-    href: "/",
-  },
-  {
-    text: "Sobre mi",
-    href: "#sobre-mi",
-  },
-  {
-    text: "Portafolio",
-    href: "#portafolio",
-  },
-];
-
 export const Navbar = () => {
+  // const flagsElement = document.getElementById("falgs");
+
+  // flagsElement.addEventListener("click", (e) => {
+  //   console.log(e.target);
+  // });
+
   const [isOpen, setIsOpen] = useState(false);
   const [isLenguajeActive, setIsLenguajeActive] = useState(false);
 
+  // const [currentLanguage, setCurrentLanguage] = useState("es");
+
+  // const [texts, setTexts] = useState({});
+
   useEffect(() => {
-    console.log("ddd ==> ", isLenguajeActive);
+    // console.log("ddd ==> ", isLenguajeActive);
   }, [isLenguajeActive]);
 
-  const changeLenguaje = () => {
+  const changeLenguaje = async () => {
     setIsLenguajeActive(!isLenguajeActive);
+
+    // if (isLenguajeActive) {
+    //   setCurrentLanguage("es");
+    // } else {
+    //   setCurrentLanguage("en");
+    // }
+    // const response = await import(`../../../lenguajes/en.json`);
+    // setTexts(response.default);
   };
+
   const handlerOnClickMenu = () => {
     console.log("handlerOnClickMenu=>>>", isOpen);
     if (isOpen) {
@@ -75,14 +76,8 @@ export const Navbar = () => {
         </div>
 
         {/* ///////////////////////////////////////////////////////////////////// */}
-        <nav
-          className={`${styles["items-menu"]} ${isOpen ? styles["show"] : ""}`}
-        >
-          {/* Inicio, sobre mi , portafolio*/}
-          {menuItems.map(({ text, href }) => (
-            <ActiveLink key={href} text={text} href={href} />
-          ))}
-        </nav>
+        <Menu isOpen={isOpen} />
+
         <div
           className={`${styles["caja-tema-idioma"]} ${
             isOpen ? styles["show"] : ""
@@ -101,6 +96,7 @@ export const Navbar = () => {
                 className={`${styles["input-change-country"]}  ${
                   isLenguajeActive ? styles["checked"] : ""
                 }`}
+                id="flags"
                 shadow
                 checked={isLenguajeActive}
                 onChange={() => changeLenguaje()}

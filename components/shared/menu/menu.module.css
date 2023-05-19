@@ -183,3 +183,7 @@
 .input-change-country.checked > div {
   background-color: #f31260 !important;
 }
+
+.menu-style.active {
+  color: white;
+}

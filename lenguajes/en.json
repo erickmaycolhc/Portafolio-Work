@@ -1,0 +1,11 @@
+{
+  "profile": {
+    "title": "About me",
+    "description": "I am 20 years old and I am a software engineering student at the University of Applied Sciences (UPC). I'm from Peru, Passionate about programming and design. The comfort zone does not appeal to me, that's why I am self-taught to specialize as a trained programmer."
+  },
+  "portafolio": {
+    "title": "Galery",
+    "ver": "watch",
+    "codigo": "code"
+  }
+}

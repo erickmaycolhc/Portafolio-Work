@@ -10,7 +10,7 @@ export const Portafolio = () => {
         <section className={styles["section"]} id="portafolio">
           <div className={styles["container"]}>
             <div className={styles["container-title-portafolio"]}>
-              <h1>Portafolio</h1>
+              <h1>Galeria</h1>
             </div>
             <div className={styles["container-grid"]}>
               <Grid.Container gap={2} justify="center">
