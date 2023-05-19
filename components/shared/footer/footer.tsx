@@ -61,7 +61,7 @@ export const Footer = () => {
                         zoomed
                       />
                     </Link>
-                    <Text style={{ margin: "3px 0px" }}>
+                    <Text style={{ margin: "5px 0px" }}>
                       erickmaycolhc@gmail.com
                     </Text>
                   </Grid>
@@ -86,7 +86,7 @@ export const Footer = () => {
                         zoomed
                       />
                     </Link>
-                    <Text style={{ margin: "3px 0px" }}>+51 993 192 658</Text>
+                    <Text style={{ margin: "5px 0px" }}>+51 993 192 658</Text>
                   </Grid>
                 </Grid>
               </Grid.Container>
