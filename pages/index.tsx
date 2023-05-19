@@ -16,6 +16,7 @@ export default function HomePage() {
       <MainLayout>
         <div className="container-page">
           <Banner />
+
           <ProfileComponent
             title={"Sobre mi"}
             description={

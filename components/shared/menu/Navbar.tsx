@@ -56,6 +56,7 @@ export const Navbar = () => {
               className={styles["edit-logo"]}
               src="download/m.png"
               alt=""
+              id=""
               width={55}
               height={60}
             />

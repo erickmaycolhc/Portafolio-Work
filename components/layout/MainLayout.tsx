@@ -7,6 +7,8 @@ interface Props {
   children: ReactNode;
 }
 
+const origin = typeof window === "undefined" ? "" : window.location.origin;
+
 export const MainLayout = ({ children }: Props) => {
   // useEffect(() => {
   //   console.log("Width : movil: App" + window.innerWidth);
@@ -22,6 +24,13 @@ export const MainLayout = ({ children }: Props) => {
         <title>Erick</title>
         <meta name="description" content="Home Page" />
         <link rel="icon" href="/favicon.ico" />
+
+        <meta property="og:title" content="Portafolio" />
+        <meta
+          property="og:description"
+          content="Este es mi portafolio espero y les guste."
+        />
+        <meta property="og:image" content={`${origin}/img/m.png`} />
       </Head>
       <Navbar />
 
