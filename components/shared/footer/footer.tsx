@@ -8,6 +8,7 @@ import MailOutlineIcon from "@mui/icons-material/MailOutline";
 import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
 import { Avatar, Grid, Text } from "@nextui-org/react";
 import Link from "next/link";
+import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 
 export const Footer = () => {
   return (
@@ -60,7 +61,9 @@ export const Footer = () => {
                         zoomed
                       />
                     </Link>
-                    <Text>erickmaycolhc@gmail.com</Text>
+                    <Text style={{ margin: "3px 0px" }}>
+                      erickmaycolhc@gmail.com
+                    </Text>
                   </Grid>
                 </Grid>
               </Grid.Container>
@@ -75,9 +78,7 @@ export const Footer = () => {
                     >
                       <Avatar
                         style={{ marginRight: "18px", fontFamily: "saira" }}
-                        icon={
-                          <LocalPhoneIcon className={styles["icon-white"]} />
-                        }
+                        icon={<WhatsAppIcon className={styles["icon-white"]} />}
                         size="md"
                         pointer
                         bordered
@@ -85,7 +86,7 @@ export const Footer = () => {
                         zoomed
                       />
                     </Link>
-                    <Text>+51 993 192 658</Text>
+                    <Text style={{ margin: "3px 0px" }}>+51 993 192 658</Text>
                   </Grid>
                 </Grid>
               </Grid.Container>
