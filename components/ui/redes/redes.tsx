@@ -27,7 +27,6 @@ export const Redes = ({ socialNetworks }: Props) => {
                     size="md"
                     pointer
                     bordered
-                    // color="gradient"
                     zoomed
                   />
                 </Link>

@@ -22,15 +22,15 @@ export const Footer = () => {
                 <Redes
                   socialNetworks={[
                     {
-                      icon: <InstagramIcon />,
+                      icon: <InstagramIcon className={styles["icon-white"]} />,
                       link: "https://www.instagram.com/maycol_bnet/",
                     },
                     {
-                      icon: <GitHubIcon />,
+                      icon: <GitHubIcon className={styles["icon-white"]} />,
                       link: "https://github.com/erickmaycolhc",
                     },
                     {
-                      icon: <LinkedInIcon />,
+                      icon: <LinkedInIcon className={styles["icon-white"]} />,
                       link: "https://www.linkedin.com/in/erick-maycol-hc-686084264/",
                     },
                   ]}
@@ -47,13 +47,12 @@ export const Footer = () => {
               <Grid.Container gap={1}>
                 <Grid xs={12}>
                   <Grid style={{ display: "flex" }}>
-                    <Link
-                      href="https://mail.google.com/mail/u/0/#inbox"
-                      target="_blank"
-                    >
+                    <Link href="mailto:tucorreo@gmail.com" target="_blank">
                       <Avatar
                         style={{ marginRight: "18px", fontFamily: "saira" }}
-                        icon={<MailOutlineIcon />}
+                        icon={
+                          <MailOutlineIcon className={styles["icon-white"]} />
+                        }
                         size="md"
                         pointer
                         bordered
@@ -71,12 +70,14 @@ export const Footer = () => {
                 <Grid xs={12}>
                   <Grid style={{ display: "flex" }}>
                     <Link
-                      href="https://api.whatsapp.com/send/?phone=993192658&text=Hola te escribo desde la web&type=phone_number&app_absent=0"
+                      href="https://api.whatsapp.com/send/?phone=993192658&text=Hola vi tu portafolio, te escribo desde la web.&type=phone_number&app_absent=0"
                       target="_blank"
                     >
                       <Avatar
                         style={{ marginRight: "18px", fontFamily: "saira" }}
-                        icon={<LocalPhoneIcon />}
+                        icon={
+                          <LocalPhoneIcon className={styles["icon-white"]} />
+                        }
                         size="md"
                         pointer
                         bordered

@@ -56,6 +56,10 @@
   font-size: 16px;
 }
 
+.icon-white {
+  color: white;
+}
+
 @media screen and (max-width: 515px) {
   .footer {
     flex-flow: column;

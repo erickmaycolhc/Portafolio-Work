@@ -75,7 +75,7 @@ export const CardProject = ({
           }}
         >
           <Row justify="flex-end" style={{ paddingRight: 25 }}>
-            <Link href={ver}>
+            <Link href={ver} target="_blank">
               <Button flat auto rounded color="gradient">
                 <Text
                   css={{ color: "inherit", paddingRight: "5px" }}
@@ -90,7 +90,7 @@ export const CardProject = ({
             </Link>
           </Row>
           <Row justify="flex-start">
-            <Link href={linkCode}>
+            <Link href={linkCode} target="_blank">
               <Button flat auto rounded color="gradient">
                 <Text
                   css={{ color: "inherit", paddingRight: "5px" }}
