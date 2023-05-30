@@ -20,7 +20,7 @@ export default function HomePage() {
           <ProfileComponent
             title={"Sobre mi"}
             description={
-              "Tengo 20 años y soy estudiante de ingeniería de software en la universidad de ciencias aplicadas(UPC). Soy de Perú, Apacionado por la programación y el diseño. La zona de confort no me atrae, por eso soy autodidacta para especializarme como programador capacitado."
+              "Tengo 20 años y soy estudiante de ingeniería de software en la universidad de ciencias aplicadas(UPC). Soy de Perú, Apasionado por la programación y el diseño. La zona de confort no me atrae, por eso soy autodidacta para especializarme como programador capacitado."
             }
             url={[
               {
