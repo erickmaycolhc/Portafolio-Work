@@ -21,13 +21,13 @@ export const ButttonCv = () => {
   //logica de descarga pdf
   const handleDownload = () => {
     console.log("handleDownload=>>", handleDownload);
-    fetch(`/download/CV-Erick-Huallullo-Cirineo.pdf`)
+    fetch(`/download/cv-Erick-Huallullo.pdf`)
       .then((response) => response.blob())
       .then((blob) => {
         const url = URL.createObjectURL(blob);
         const a = document.createElement("a");
         a.href = url;
-        a.download = "CV-Erick-Huallullo-Cirineo.pdf";
+        a.download = "CV-Erick-Huallullo.pdf";
         a.style.display = "none";
         document.body.appendChild(a);
         a.click();

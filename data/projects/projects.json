@@ -43,5 +43,29 @@
     ],
     "ver": "https://open-jira-ebon-rho.vercel.app",
     "linkCode": "https://github.com/erickmaycolhc/OpenJira"
+  },
+  {
+    "link": "https://next-js-locate-stores-tambo-frontend.vercel.app/maps",
+    "img": "download/tambo.png",
+    "title": "Sistema Geolocalización",
+    "tecnologies": [
+      {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/react/react-original.svg"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/typescript/typescript-original.svg"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/materialui/materialui-original.svg"
+      },
+      {
+        "url": "https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/nestjs/nestjs-plain.svg"
+      }
+    ],
+    "ver": "https://next-js-locate-stores-tambo-frontend.vercel.app/maps",
+    "linkCode": "https://github.com/JosuePercy/CHAMBEA"
   }
 ]

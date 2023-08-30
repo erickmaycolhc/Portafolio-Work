@@ -8,9 +8,10 @@ interface Props {
 }
 
 const origin = typeof window === "undefined" ? "" : window.location.origin;
+console.log("origin ==>", origin);
 
 export const MainLayout = ({ children }: Props) => {
-  console.log(origin);
+  console.log("origin ==>", origin);
   // useEffect(() => {
   //   console.log("Width : movil: App" + window.innerWidth);
   //   console.log("Height : movil App" + window.innerHeight);
