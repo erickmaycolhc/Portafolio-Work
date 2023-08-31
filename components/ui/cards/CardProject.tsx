@@ -23,7 +23,8 @@ export const CardProject = ({
   linkCode,
 }: Props) => {
   return (
-    <Grid xs={12} sm={5} lg={5}>
+    <Grid xs={12} sm={5} lg={4}>
+      {/* lg queda pendiente por si subo un projecto para acomodar*/}
       <Card isHoverable variant="flat">
         <Card.Body>
           <div>
