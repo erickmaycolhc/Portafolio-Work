@@ -3,7 +3,7 @@ import { useRouter } from "next/router";
 import React, { CSSProperties, useEffect, useState } from "react";
 import styles from "./menu.module.css";
 
-const menuItems = [
+export const menuItems = [
   {
     text: "Inicio",
     href: "",

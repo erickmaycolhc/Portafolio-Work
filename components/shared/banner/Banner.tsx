@@ -1,9 +1,36 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./home.module.css";
 // import styles from "../menu/menu.module.css";
 import { ButttonCv } from "../../ui/boton-cv/butttonCv";
+import Link from "next/link";
+import { useRouter } from "next/router";
+import { menuItems } from "../menu";
 
+const { href } = menuItems[1];
+console.log("href =>>>", href);
 export const Banner = () => {
+  const [menuActive, setMenuActive] = useState<string>("");
+
+  const handleScroll = (
+    e: React.MouseEvent<HTMLAnchorElement, MouseEvent>,
+    hrefActual: string
+  ) => {
+    e.preventDefault();
+
+    setMenuActive(hrefActual);
+
+    if (hrefActual == "") {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    } else {
+      const elem = document.querySelector(hrefActual);
+      elem?.scrollIntoView({
+        behavior: "smooth",
+      });
+    }
+  };
   return (
     <>
       <div className={styles["container-header-perfile"]}>
@@ -25,9 +52,15 @@ export const Banner = () => {
         <div className={styles["photo"]}>
           <img src="img/mm.png" alt="" />
         </div>
-        <div className={styles["boton-hacia-abajo"]}>
-          <span></span>
-          <span></span>
+        <div
+          className={`${styles["boton-hacia-abajo"]} ${
+            menuActive === href ? styles["active"] : ""
+          }`}
+        >
+          <Link href={href} onClick={(e) => handleScroll(e, href)}>
+            <span></span>
+            <span></span>
+          </Link>
         </div>
       </div>
     </>
